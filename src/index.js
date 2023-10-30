@@ -3,7 +3,7 @@ const prompt = require('prompt-sync')();
 // Helper Functions
 const askForName = () => {
   console.log("Welcome!")
-  const name = prompt('What is your name? ');
+  const name = prompt('What is your name? ').trim();
   console.log(`hello ${name}`);
   return name;
 }
